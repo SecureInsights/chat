@@ -1,0 +1,47 @@
+{
+  "name": "nodecrypt",
+  "version": "1.0.0",
+  "description": "端到端加密房间",
+  "main": "worker/index.js",
+  "scripts": {
+    "build": "vite build",
+    "dev": "wrangler dev",
+    "deploy": "npm run build && wrangler deploy",
+    "publish": "npm run deploy",
+    "build:docker": "vite build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shuaiplus/NodeCrypt.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shuaiplus/NodeCrypt/issues"
+  },
+  "homepage": "https://github.com/shuaiplus/NodeCrypt#readme",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.5.2",
+    "cssnano": "7.1.9",
+    "terser": "^5.48.0",
+    "vite": "6.4.3",
+    "wrangler": "4.107.0"
+  },
+  "dependencies": {
+    "@dicebear/core": "^9.4.3",
+    "@dicebear/micah": "^9.4.2",
+    "dompurify": "^3.4.11",
+    "emoji-picker-element": "^1.29.1",
+    "fflate": "^0.8.3"
+  },
+  "overrides": {
+    "picomatch": "^4.0.4",
+    "rollup": "^4.59.0",
+    "undici": "^7.28.0",
+    "ws": "^8.21.0"
+  }
+}
